@@ -1,10 +1,12 @@
 package com.fatec.p2simulado.resources;
 
 import java.net.URI;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,13 @@ public class AnuncioController {
     
     @Autowired
     private AnuncioServices anuncioService;
+
+
+    @GetMapping
+    public ResponseEntity<List<Anuncio>> getAnuncios(){
+        List<Anuncio> anuncioses = anuncioService.getAnuncios();
+        return ResponseEntity.ok().body(anuncioses);
+    }
 
     @PostMapping
     public ResponseEntity<Anuncio> saveAnuncio(@RequestBody Anuncio anuncio){
