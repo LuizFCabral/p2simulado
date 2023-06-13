@@ -1,0 +1,4 @@
+insert into TBL_ANUNCIO (imagem, titulo, descr, anunciante) values('https://m.media-amazon.com/images/I/51rUpvEIMrL._AC_SX569_.jpg', 'Arno Cafeteira', 'Espresso Nescafé Dolce Gusto Genio S Plus DGS3, Vermelha', 'Amazon');
+insert into TBL_ANUNCIO (imagem, titulo, descr, anunciante) values('https://www.lg.com/br/images/geladeiras/md07566901/gallery/D-01.jpg', 'Geladeira LG', 'Geladeira Cinza', 'LG');
+insert into TBL_ANUNCIO (imagem, titulo, descr, anunciante) values('https://m.media-amazon.com/images/I/61-DBIoQu6L._AC_SX679_.jpg', 'Jeep Renegade', 'Um carro legal pra andar', 'Amazon');
+insert into TBL_ANUNCIO (imagem, titulo, descr, anunciante) values('https://m.media-amazon.com/images/I/41+qb5G9XuL._AC_SX522_.jpg', 'Caderno Eosa', 'capa plástica sem pauta 1/8 80 folhas Neon Roxo Tilibra', 'Amazon');
